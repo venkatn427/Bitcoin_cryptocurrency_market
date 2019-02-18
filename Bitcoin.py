@@ -118,7 +118,7 @@ LABELS = ["biggish", "micro", "nano"]
 biggish = capcount('market_cap_usd > 3e+8')
 
 # Same as above for micro ...
-micro = capcount('market_cap_usd > 5e+7' & 'market_cap_usd < 3e+8')
+micro = capcount('market_cap_usd > 5e+7 & market_cap_usd < 3e+8')
 
 # ... and for nano
 nano =  capcount('market_cap_usd < 5e+7')
